@@ -1,5 +1,7 @@
 # Engage
-An iPad web app that mimics a restaurant that leads cheekily into a proposal (for free!)
+An iPad web app that mimics a restaurant that leads cheekily into a proposal (for free!). 
+
+Generally speaking, the server came to our table and introduced themselves and mentioned that for the Holidays they have themes that accompany the meal to tie everything together. We are to use the iPad to select our drinks and appetizers and they will return with the drinks, go over the specials, and manage the meal from there. They place the iPad down or give it to your significant other and it's up to the technology gods from there. 
 
 ![Alt Text](https://raw.githubusercontent.com/balexbyrd/Engage/master/Engage.gif)
 
@@ -19,7 +21,7 @@ An iPad web app that mimics a restaurant that leads cheekily into a proposal (fo
 
 ## Up and running
 
-1. Edit the HTML and CSS files to suit your needs.
+1. Edit the HTML and CSS files to suit your needs. Remember to change the logo and pictures to match your restaurant.
 2. Create an AWS S3 bucket and upload the Engage folder.
 3. Make the files publicly accessible by following the tutorials for a static website.
 4. Navigate to the URL on your iPad and save the page to your home screen.
@@ -35,6 +37,10 @@ An iPad web app that mimics a restaurant that leads cheekily into a proposal (fo
 ![Screenshot](https://raw.githubusercontent.com/balexbyrd/img/master/Engage.jpg)
 
 This allows the developer the ability to mimic what it will look and act like on the iPad. Always test afterwards!
+
+## Going to the next level
+
+I wanted to be able to automatically post to Facebook or send myself and significant other an email with the exact time they pressed yes and maybe some other fun stuff. I looked into the Facebook bit but I would need permission from my significant other and nobody has time fo' that. Any advice or if you'd like to make a pull request to integrate this I'm all for it.
 
 ## Limitations
 
