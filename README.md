@@ -5,12 +5,17 @@ An iPad web app that mimics a restaurant that leads cheekily into a proposal (fo
 
 ## Screen Detail
 
-1. 1.html - This is the welcome screen that sets the stage. Change the .mp4 with your voice for added kudos.
-2. 2.html - The 'Brief History' section. Add in just enough detail about your relationship to get the ball rolling yet not be too obvious.
-3. 3.html - A few marriage wines are listed, time to get creative if you like. Include some good descriptions of wines you two enjoy.
-4. 4.html - The appetizer section. Update with appetizers you two have enjoyed over the course of your relationship, along with a few of the current restaurant.
-5. 5.html - The proposal! Edit the google maps URL by going to Google Maps > entering in the restaurant > Click 'Share' > Select 'Embed Map' and use that URL.
-6. 6.html - Your hard work paid off. Celebrate!
+1.html - This is the welcome screen that sets the stage. Change the .mp4 with your voice for added kudos.
+
+2.html - The 'Brief History' section. Add in just enough detail about your relationship to get the ball rolling yet not be too obvious.
+
+3.html - A few marriage wines are listed, time to get creative if you like. Include some good descriptions of wines you two enjoy.
+
+4.html - The appetizer section. Update with appetizers you two have enjoyed over the course of your relationship, along with a few of the current restaurant.
+
+5.html - The proposal! Edit the google maps URL by going to Google Maps > entering in the restaurant > Click 'Share' > Select 'Embed Map' and use that URL.
+
+6.html - Your hard work paid off. Celebrate!
 
 ## Up and running
 
