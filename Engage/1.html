@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Home</title>
+    <meta content="IE=edge,chrome=1" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <!-- For saving to the Ipad homepage -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" href="img/favicon.png">
+    <!-- /End -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" rel="stylesheet" type="text/css">
+
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+    <main class="m-scene grey lighten-4" id="main">
+        <div class="row">
+            <div class="h-banner">
+                <div class="parallax">
+                    <div class="swiper-container slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/slide3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <img class="logo" src="img/logo.png" alt="Logo"></img>
+            </div>
+        </div>
+        <div class="row white bottom-border m-b-0">
+            <div class="animated fadeInLeft">
+                <div class="heading-container">
+                    <h2 class="heading cd-headline clip">Welcome,
+                        <span class="cd-words-wrapper">
+                            <!--Change Party Name-->
+                           <b class="is-visible">*Enter Last Name* Party</b>
+                           <b>Friends</b>
+                        </span>
+                    </h2>
+                    <p class="flow-text">Tonight's dining experience comes with a distinct theme. The theme is intended to be thought-provoking and immerse guests in a tailored dining experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row p-20 m-0">
+            <div class="col s12">
+                <div class="card-panel z-depth-2 mp-0">
+                    <div class="card animated fadeInLeft mp-0">
+                        <div class="card-content">
+                            <span class="card-title black-text"><b>choice</b>  /CHois/<br></span>
+                            <div class="row">
+                                <i><small>noun</small></i>
+                                <p class="col s11 offset-s1">
+                                    <b>1.</b> an act of selecting or making a decision when faced with two or more possibilities.
+                                </p>
+                                <br>
+                                <small class="col s10 offset-s2">"you have no other choice"</small>
+                                <br>
+                                <small class="col s12  offset-s2">synonyms: option, alternative, possible course of action</small>
+                            </div>
+                            <div class="row">
+                                <i><small>adjective</small></i>
+                                <p class="col s11 offset-s1  lime accent-1">
+                                    <b>2.</b> (especially of food) of very good quality.
+                                </p>
+                                <br>
+                                <small class="col s10 offset-s2">"he picked a choice early plum"</small>
+                                <br>
+                                <small class="col s12  offset-s2">synonyms: superior, first-class, first-rate, prime, premier, grade A, best, finest, excellent</small>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <!--Audio file for the theme-->
+                            <audio id="audio" src="choice.mp4"></audio>
+                            <i onclick="play()" class="ion-volume-medium"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer primary-color">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 animated fadeInLeft">
+                    <p class="center-align grey-text text-lighten-4">To begin, click the forward arrow below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue darken-1">
+            <a href="2.html" class="waves-effect blue darken-2 btn-large right">
+                <b>History&nbsp;</b>
+                <i class="ion-chevron-right"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="js/functions.js"></script>
+
+</body>
+
+</html>

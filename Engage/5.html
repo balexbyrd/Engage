@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>GameTime</title>
+    <meta content="IE=edge,chrome=1" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <link rel="icon" href="img/favicon.png">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" rel="stylesheet" type="text/css">
+
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main class="m-scene grey lighten-2" id="main">
+        <div class="row">
+            <div class="h-banner">
+                <div class="parallax">
+                    <div class="swiper-container slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/slide3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <img class="logo" src="img/logo.png"></img>
+            </div>
+        </div>
+        <div class="row features grey lighten-2 p-10 m-b-0">
+            <div class="p-10">
+                <div class="col s12 center-align p-20">
+                    <div class="card-panel animated fadein delay-20">
+                        <div class="center promo">
+                            <i class="fa fa-diamond primary-text"></i>
+                            <h6 class="promo-caption p-10 p-b-0">Error 426 - Upgrade Required</h6>
+                            <h6 class="promo-caption p-10 p-b-0" style="color: red;">Your choices could not be validated, you still have one choice to make.<br></h6>
+                            <h1 id="time" class="promo-caption p-b-0"></h1>
+                            <!--Update iframe with the location-->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6650086.237284028!2d-85.79080186533339!3d35.52621944596054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889c0d8bc9be231f%3A0xf7fc1254e5acca32!2sYour+Mama&#39;z+House!5e0!3m2!1sen!2sus!4v1483125665404"
+                                width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="footer-copyright blue darken-1">
+        <a href="#modal1" class="waves-effect blue darken-2 btn-large left modal-trigger">
+            <b>No</b>
+        </a>
+        <a id="yes" href="#modal2" class="waves-effect blue darken-2 btn-large right modal-trigger">
+            <b>YES!</b>
+        </a>
+    </div>
+    <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+            <img src="img/yds.jpg"></img>
+            <!--<p>...O RLY?!</p>-->
+        </div>
+        <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect waves-green btn-flat ">Try Again</a>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <img src="img/chuck.gif"></img>
+        </div>
+    </div>
+    <script>
+        var saidYes
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+
+        function startTime() {
+            var today = new Date();
+
+            var mo = today.getMonth() + 1;
+            var d = today.getDate();
+            var y = today.getFullYear();
+
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            // add a zero in front of numbers<10
+            m = checkTime(m);
+            s = checkTime(s);
+            saidYes = mo + "/" + d + "/" + y + " " + h + ":" + m + ":" + s;
+            document.getElementById('time').innerHTML = saidYes;
+            t = setTimeout(function() {
+                startTime()
+            }, 500);
+        }
+        startTime();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
